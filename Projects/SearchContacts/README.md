@@ -11,7 +11,8 @@ Create file res -> xml -> searchable.xml and set searchSuggestAuthority to com.a
 <searchable xmlns:android="http://schemas.android.com/apk/res/android"
     android:label="@string/contact"
     android:hint="@string/contact"
-    android:searchSuggestAuthority="com.android.contacts"/>```
+    android:searchSuggestAuthority="com.android.contacts"/>
+```
 
 ##### Initialize Searchview widget
 In your activity containing the SearchView widget, initialize it with SearchableInfo parameter.
