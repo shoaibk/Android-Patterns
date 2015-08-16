@@ -1,7 +1,15 @@
-### SearchContacts
-Shows the usage of SearchView widget when it is connected to Contacts content provider of the phone.
+#### SearchContacts
+Shows the usage of SearchView widget when it is connected to Contacts content provider of the phone. As the user starts typing into the SearchView, contacts saved on the device will show up as search suggestions.
 
-#### Steps
+##### Step 0 - Add SearchView widget into your activity's layout
+```xml
+<SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView">
+</SearchView>
+```
+
 
 ##### Step 1 - Add searchable.xml
 Create file res -> xml -> searchable.xml and set searchSuggestAuthority to com.android.contacts.
