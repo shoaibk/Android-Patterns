@@ -4,9 +4,9 @@ Shows the usage of SearchView widget when it is connected to Contacts content pr
 ##### Step 0 - Add SearchView widget into your activity's layout
 ```xml
 <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchView">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/searchView">
 </SearchView>
 ```
 
