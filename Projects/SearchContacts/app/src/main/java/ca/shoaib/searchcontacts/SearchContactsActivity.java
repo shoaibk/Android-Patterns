@@ -1,9 +1,13 @@
 package ca.shoaib.searchcontacts;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.SearchManager;
+import android.app.SearchableInfo;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.SearchView;
 
 public class SearchContactsActivity extends AppCompatActivity {
 
@@ -11,6 +15,7 @@ public class SearchContactsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_contacts);
+        initSearchView();
     }
 
     @Override
@@ -33,5 +38,12 @@ public class SearchContactsActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void initSearchView() {
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        final SearchView searchView = (SearchView) findViewById(R.id.searchView);
+        SearchableInfo searchableInfo = searchManager.getSearchableInfo(getComponentName());
+        searchView.setSearchableInfo(searchableInfo);
     }
 }
