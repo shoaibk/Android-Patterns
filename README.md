@@ -6,4 +6,4 @@ It's not that there are not enough examples out there, but most of the time the 
 The aim of this work is to handle each pattern at a time, independent of the others, as much as possible. I realize that sometimes it won't be just possible. For example, in order to implement a Content Provider, one needs to implement a database first.
 
 ##### Project list
-##### SearchContacts(Projects/SearchContacts)
+##### SearchContacts(https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchContacts)
