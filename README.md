@@ -11,5 +11,4 @@ ___
 
 
 ##### Todo
-- [] SearchAndViewOneContact
--[x] SearchContact
+- SearchAndViewContact
