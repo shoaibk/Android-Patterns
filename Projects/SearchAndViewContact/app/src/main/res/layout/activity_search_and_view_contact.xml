@@ -15,10 +15,12 @@
         android:id="@+id/searchView"/>
 
     <TextView
+        android:paddingTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name"/>
     <TextView
+        android:paddingTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/contact_name"
