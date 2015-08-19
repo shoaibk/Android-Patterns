@@ -8,7 +8,8 @@ ___
 
 #### Project list
 ##### [SearchContacts](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchContacts)
+##### [SearchAndViewContact](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchAndViewContact)
 
 
 ##### Todo
-- SearchAndViewContact
+- BookDatabase
