@@ -34,12 +34,11 @@ if (ContactsContract.Intents.SEARCH_SUGGESTION_CLICKED.equals(intent.getAction()
 where getContactName(Intent) returns the name of the contact using the Uri attached to the intent:
 ```java
 private String getContactName(Intent intent) {
-        Log.d(TAG, "Uri = " + intent.getData().toString());
-        Cursor phoneCursor = getContentResolver().query(intent.getData(), null, null, null, null);
-        phoneCursor.moveToFirst();
-        int colNameIndex = phoneCursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);
-        String contactName = phoneCursor.getString(colNameIndex);
-        phoneCursor.close();
-        return contactName;
-    }
+    Cursor phoneCursor = getContentResolver().query(intent.getData(), null, null, null, null);
+    phoneCursor.moveToFirst();
+    int colNameIndex = phoneCursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);
+    String contactName = phoneCursor.getString(colNameIndex);
+    phoneCursor.close();
+    return contactName;
+}
 ```
