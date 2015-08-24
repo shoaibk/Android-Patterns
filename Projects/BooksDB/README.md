@@ -66,4 +66,4 @@ SQLiteDatabase database = helper.getWritableDatabase();
 Open Android Device monitor and check if the database is created. It should be in:
 data -> data -> [package_name] -> databases -> books.db
 
-![Screenshot](http://i.imgur.com/EwTOPHo.png)
+![Screenshot](pic1.png)
