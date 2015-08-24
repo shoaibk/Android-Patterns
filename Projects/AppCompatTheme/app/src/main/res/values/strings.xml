@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">AppCompatTheme</string>
-    <string name="hello_world">Hello Abir!</string>
+    <string name="hello_world">Hello Android!</string>
     <string name="action_settings">Settings</string>
 </resources>
