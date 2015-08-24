@@ -7,8 +7,9 @@ The aim of this work is to have a set of reference implementations that someone 
 ___
 
 #### Project list
-##### [SearchContacts](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchContacts)
-##### [SearchAndViewContact](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchAndViewContact)
+##### [SearchContacts](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchContacts) Using a Search Widget, user can search for a contact. As the user types in, matching contacts appear as search suggestions.
+##### [SearchAndViewContact](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchAndViewContact) - User can pick a search suggestion and view the details of a particular contact.
+##### [LauncherIcon] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LauncherIcon) - Importing a launcher icon into Android Studio.
 
 
 ##### Todo
