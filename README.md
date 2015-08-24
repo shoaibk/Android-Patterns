@@ -11,7 +11,8 @@ ___
 - [SearchContacts](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchContacts) Using a Search Widget, user can search for a contact. As the user types in, matching contacts appear as search suggestions.
 - [SearchAndViewContact](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SearchAndViewContact) - User can pick a search suggestion and view the details of a particular contact.
 - [LauncherIcon] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LauncherIcon) - Importing a launcher icon into Android Studio.
-
+- [BooksDB] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BooksDB) - Create a simple SQLite database containing one table
 
 #### Todo
-- BookDatabase
+- BookProvider
+- BookAdapter
