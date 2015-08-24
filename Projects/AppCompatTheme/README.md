@@ -43,4 +43,4 @@ In styles.xml file, use the newly created colors.
 </resources>
 ```
 
-![App Screenshot](http://i.imgur.com/WeGcFSn.png =100x)
+![App Screenshot](pic1.png)
