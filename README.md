@@ -14,5 +14,7 @@ ___
 - [BooksDB] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BooksDB) - Create a simple SQLite database containing one table
 
 #### Todo
+- BookAdapter - custom ArrayAdapter for Book model
+- BookCursorAdapter - custom CursorAdapter for Book model
 - BookProvider
 - BookAdapter
