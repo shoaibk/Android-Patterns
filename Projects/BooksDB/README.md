@@ -1,9 +1,9 @@
 #### Creating a Book Database
 
 We create an SQLite Database of Books. A Book has a the following information associated:
-Title - the name of the book 
-Author - the author of the book
-Year - the year the book was published
+- Title - the name of the book 
+- Author - the author of the book
+- Year - the year the book was published
 
 ##### Step 0 - Create DBHelper
 Create the class which extends SQLiteOpenHelper. It contains code to create and upgrade the database, as well as constants such as database name, version etc.
