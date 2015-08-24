@@ -10,4 +10,4 @@ The pixel dimension of the file should be at least 192 x 192 (xxxhdpi). The bigg
 - In Asset Studio, choose the .png file that you prepared in step 0. Choose trip, crop, shape as desired.
 - Click Next. Then click Finish.
 
-![Including launcher icon in Android Studio](http://imgur.com/gallery/GMg2HYK)
+[Launcher Icon](http://i.imgur.com/GMg2HYK.png)
