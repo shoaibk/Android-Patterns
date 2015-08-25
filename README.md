@@ -13,6 +13,7 @@ ___
 - [LauncherIcon] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LauncherIcon) - Importing a launcher icon into Android Studio.
 - [BooksDB] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BooksDB) - Create a simple SQLite database containing one table
 - [BookArrayAdapter] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BookArrayAdapter) - Create a custom ArrayAdapter and use in a ListView
+- [SiteProvider] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SiteProvider) - Create a Content Provider for a database of websites.
 
 #### Todo
 - BookCursorAdapter - custom CursorAdapter for Book model
