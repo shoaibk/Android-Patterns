@@ -152,3 +152,25 @@ Add query, insert, delete and update methods.
     }
 ```
 
+2d. Insert Data
+In MainActivity.java, create and add a sample to the database
+
+```java
+ContentValues values = new ContentValues();
+values.put(SiteContract.SiteEntry.COLUMN_ADDRESS, "www.google.com");
+values.put(SiteContract.SiteEntry.COLUMN_SHORT_NAME, "Google");
+values.put(SiteContract.SiteEntry.COLUMN_IP_ADDRESS, "74.125.226.180");
+values.put(SiteContract.SiteEntry.COLUMN_LOGO_URL,
+                "https://upload.wikimedia.org/wikipedia/commons/a/a0/Google_favicon_2012.jpg");
+
+Uri siteUri = getContentResolver().insert(SiteContract.CONTENT_URI, values);
+Log.d(TAG, "Inserted Site: " + siteUri.toString());
+```
+
+2e. Check
+Check if the data has been added by opening saving the database to the local machine through Android Device Monitor and opening the database using SQLiteBrowser.
+
+![Android Device Monitor](pic1)
+
+![SQLiteBrowser](pic2)
+
