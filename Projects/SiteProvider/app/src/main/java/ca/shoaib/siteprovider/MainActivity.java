@@ -17,12 +17,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ContentValues values = new ContentValues();
-        values.put(SiteContract.SiteEntry.COLUMN_ADDRESS, "www.google.com");
-        values.put(SiteContract.SiteEntry.COLUMN_SHORT_NAME, "Google");
-        values.put(SiteContract.SiteEntry.COLUMN_IP_ADDRESS, "74.125.226.180");
-        values.put(SiteContract.SiteEntry.COLUMN_LOGO_URL,
+        insertSite("www.google.com",
+                "Google",
+                "74.125.226.180",
                 "https://upload.wikimedia.org/wikipedia/commons/a/a0/Google_favicon_2012.jpg");
+    }
+
+    private void insertSite(String address, String shortName, String ipAddress, String logoUrl) {
+        ContentValues values = new ContentValues();
+        values.put(SiteContract.SiteEntry.COLUMN_ADDRESS, address);
+        values.put(SiteContract.SiteEntry.COLUMN_SHORT_NAME, shortName);
+        values.put(SiteContract.SiteEntry.COLUMN_IP_ADDRESS, ipAddress);
+        values.put(SiteContract.SiteEntry.COLUMN_LOGO_URL, logoUrl);
 
         Uri siteUri = getContentResolver().insert(SiteContract.CONTENT_URI, values);
         Log.d(TAG, "Inserted Site: " + siteUri.toString());
