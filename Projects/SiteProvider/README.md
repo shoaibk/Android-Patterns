@@ -96,4 +96,14 @@ private static final UriMatcher sUriMatcher =
     }
 ```
 
+###### 2b. Register Provider
+In AndroidManifest.xml file, add a <provider> tag and include the information about the newly created provider.
+
+```xml
+<provider
+    android:authorities="ca.shoaib.siteprovider.sites"
+    android:name=".SiteProvider"
+    android:exported="false" />
+```
+
 
