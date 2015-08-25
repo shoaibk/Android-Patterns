@@ -61,3 +61,22 @@ public class SiteDBHelper extends SQLiteOpenHelper {
 }
 ```
 
+##### 2. Create Content Provider
+###### a. Create Provider.java
+Create SiteProvider class that extends ContentProvider. Add stubs for the methods inherited from ContentProvider.
+
+i) Initialize OpenHelper (SiteDBHelper)
+
+```java
+private SiteDBHelper mOpenHelper;
+
+    @Override
+    public boolean onCreate() {
+        mOpenHelper = new SiteDBHelper(getContext());
+        return true;
+    }
+```
+
+
+
+

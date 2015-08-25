@@ -8,7 +8,6 @@ import android.net.Uri;
 
 public class SiteProvider extends ContentProvider {
 
-    private SiteDBHelper mOpenHelper;
     // Constants to identify the requested operation
     static final int SITE = 1;
     static final int SITE_ID = 2;
@@ -21,6 +20,8 @@ public class SiteProvider extends ContentProvider {
         sUriMatcher.addURI(authority, base, SITE);
         sUriMatcher.addURI(authority, base + "/#", SITE_ID);
     }
+
+    private SiteDBHelper mOpenHelper;
 
     @Override
     public boolean onCreate() {
