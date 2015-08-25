@@ -14,11 +14,12 @@ public class SiteDBHelper extends SQLiteOpenHelper {
             SiteContract.SiteEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             SiteContract.SiteEntry.COLUMN_ADDRESS + " TEXT, " +
             SiteContract.SiteEntry.COLUMN_SHORT_NAME + " TEXT, " +
-            SiteContract.SiteEntry.COLUMN_IP_ADDRESS + " TEXT" +
+            SiteContract.SiteEntry.COLUMN_IP_ADDRESS + " TEXT, " +
             SiteContract.SiteEntry.COLUMN_LOGO_URL + " TEXT" +
             ")";
 
     private static final String TABLE_UPGRADE = "DROP TABLE IF EXISTS " + SiteContract.SiteEntry.TABLE_NAME;
+
 
     public SiteDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);

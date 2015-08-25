@@ -18,4 +18,12 @@ public class SiteContract {
         public static final String COLUMN_IP_ADDRESS = "ip_address";
         public static final String COLUMN_LOGO_URL = "logo";
     }
+
+    public static final String[] SITE_TABLE_ALL_COLUMNS = {
+            SiteEntry._ID,
+            SiteEntry.COLUMN_ADDRESS,
+            SiteEntry.COLUMN_SHORT_NAME,
+            SiteEntry.COLUMN_IP_ADDRESS,
+            SiteEntry.COLUMN_LOGO_URL
+    };
 }

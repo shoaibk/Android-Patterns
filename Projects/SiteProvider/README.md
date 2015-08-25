@@ -62,7 +62,7 @@ public class SiteDBHelper extends SQLiteOpenHelper {
 ```
 
 ##### 2. Create Content Provider
-###### 2a. Create Provider.java
+###### 2a. Create Provider
 Create SiteProvider class that extends ContentProvider. Add stubs for the methods inherited from ContentProvider.
 
 i) Initialize OpenHelper (SiteDBHelper)
@@ -106,4 +106,49 @@ In AndroidManifest.xml file, add a <provider> tag and include the information ab
     android:exported="false" />
 ```
 
+###### 2c. Add CRUD Methods
+Add query, insert, delete and update methods.
+
+```java
+@Override
+    public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
+        return mOpenHelper.getReadableDatabase().query(
+                SiteContract.SiteEntry.TABLE_NAME,
+                SiteContract.SITE_TABLE_ALL_COLUMNS,
+                selection,
+                null,
+                null,
+                null,
+                SiteContract.SiteEntry.COLUMN_SHORT_NAME + " DESC"
+        );
+    }
+
+    @Override
+    public Uri insert(Uri uri, ContentValues values) {
+        long id = mOpenHelper.getWritableDatabase().insert(
+                SiteContract.SiteEntry.TABLE_NAME,
+                null,
+                values);
+        return Uri.parse(SiteContract.BASE_PATH + "/" + id);
+    }
+
+    @Override
+    public int delete(Uri uri, String selection, String[] selectionArgs) {
+        return mOpenHelper.getWritableDatabase().delete(
+                SiteContract.SiteEntry.TABLE_NAME,
+                selection,
+                selectionArgs
+        );
+    }
+
+    @Override
+    public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
+        return mOpenHelper.getWritableDatabase().update(
+                SiteContract.SiteEntry.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs
+        );
+    }
+```
 
