@@ -3,7 +3,7 @@
 We create a database containing information about websites - their url, name, ip address, logo. This could be useful for an app that stores data about websites.
 
 ##### 1. Create Database
-###### a. Database Contract
+###### 1a. Database Contract
 The contract file contains the public interface to the database and content provider.
 
 ```java
@@ -25,7 +25,7 @@ public class SiteContract {
 }
 ```
 
-###### b. Create DB Helper
+###### 1b. Create DB Helper
 Create the class which extends SQLiteOpenHelper. It contains code to create and upgrade the database, as well as constants such as database name, version etc.
 
 ```java
@@ -62,7 +62,7 @@ public class SiteDBHelper extends SQLiteOpenHelper {
 ```
 
 ##### 2. Create Content Provider
-###### a. Create Provider.java
+###### 2a. Create Provider.java
 Create SiteProvider class that extends ContentProvider. Add stubs for the methods inherited from ContentProvider.
 
 i) Initialize OpenHelper (SiteDBHelper)
@@ -77,6 +77,23 @@ private SiteDBHelper mOpenHelper;
     }
 ```
 
+ii) Add Constants to Match Uri
 
+```java
+static final int SITE = 1;
+static final int SITE_ID = 2;
+```
+
+iii) Create Static UriMatcher
+```java
+private static final UriMatcher sUriMatcher =
+            new UriMatcher(UriMatcher.NO_MATCH);
+    static {
+        final String authority = SiteContract.CONTENT_AUTHORITY;
+        final String base = SiteContract.BASE_PATH;
+        sUriMatcher.addURI(authority, base, SITE);
+        sUriMatcher.addURI(authority, base + "/#", SITE_ID);
+    }
+```
 
 
