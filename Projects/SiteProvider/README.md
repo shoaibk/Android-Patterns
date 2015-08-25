@@ -152,7 +152,7 @@ Add query, insert, delete and update methods.
     }
 ```
 
-2d. Insert Data
+###### 2d. Insert Data
 In MainActivity.java, create and add a sample to the database
 
 ```java
@@ -167,8 +167,8 @@ Uri siteUri = getContentResolver().insert(SiteContract.CONTENT_URI, values);
 Log.d(TAG, "Inserted Site: " + siteUri.toString());
 ```
 
-2e. Check
-Check if the data has been added by opening saving the database to the local machine through Android Device Monitor and opening the database using SQLiteBrowser.
+###### 2e. Check
+Check if the data has been added by saving the database to the local machine through Android Device Monitor and opening the database using SQLiteBrowser.
 
 ![Android Device Monitor](pic1.png)
 
