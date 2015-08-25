@@ -3,7 +3,7 @@
 We create a database containing information about websites - their url, name, ip address, logo. This could be useful for an app that stores data about websites.
 
 ##### 1. Create Database
-###### a Database Contract
+###### a. Database Contract
 The contract file contains the public interface to the database and content provider.
 
 ```java
@@ -25,7 +25,7 @@ public class SiteContract {
 }
 ```
 
-###### b Create DB Helper
+###### b. Create DB Helper
 Create the class which extends SQLiteOpenHelper. It contains code to create and upgrade the database, as well as constants such as database name, version etc.
 
 ```java
