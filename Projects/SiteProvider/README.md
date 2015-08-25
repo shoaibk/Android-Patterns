@@ -170,7 +170,7 @@ Log.d(TAG, "Inserted Site: " + siteUri.toString());
 2e. Check
 Check if the data has been added by opening saving the database to the local machine through Android Device Monitor and opening the database using SQLiteBrowser.
 
-![Android Device Monitor](pic1)
+![Android Device Monitor](pic1.png)
 
-![SQLiteBrowser](pic2)
+![SQLiteBrowser](pic2.png)
 
