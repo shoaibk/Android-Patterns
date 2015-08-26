@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createNotification(View view) {
-        // Prepare result intent
+        // Create pending intent
         Intent intent = new Intent(this, ViewNotificationActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(), intent, 0);
 
@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAutoCancel(true)
                         .setContentIntent(pendingIntent);
 
+        // Activate
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         notificationManager.notify(0, notification.build());
     }
