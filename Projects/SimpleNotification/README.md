@@ -28,3 +28,5 @@ Using NotificationManager service, activate the notification, which immediately 
 NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 notificationManager.notify(0, notification.build());
 ```
+
+![screenshot](pic1.png)
