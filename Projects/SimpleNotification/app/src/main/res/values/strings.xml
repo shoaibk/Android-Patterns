@@ -3,4 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_view_notification">View Notification</string>
+    <string name="notification_text">Notification is working!</string>
+    <string name="create_notification">Create Notification</string>
+    <string name="viewer_title">Notification Viewer</string>
+    <string name="creator_title">Notification Creator</string>
+    <string name="notification_title">Playing</string>
+    <string name="notification_content">Some music</string>
 </resources>
