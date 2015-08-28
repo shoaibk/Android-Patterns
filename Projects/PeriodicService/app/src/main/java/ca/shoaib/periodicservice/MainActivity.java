@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final long REPEAT_INTERVAL = 5000L; // 5 seconds
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,20 +17,20 @@ public class MainActivity extends AppCompatActivity {
         scheduleAlarm();
     }
 
-    // Setup a recurring alarm every half hour
+    // Setup a recurring alarm
     public void scheduleAlarm() {
-        // Construct an intent that will execute the AlarmReceiver
-        Intent intent = new Intent(getApplicationContext(), AlarmReceiver.class);
+
         // Create a PendingIntent to be triggered when the alarm goes off
-        final PendingIntent pIntent = PendingIntent.getBroadcast(this, AlarmReceiver.REQUEST_CODE,
-                intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        // The intent of this PendingIntent will execute the AlarmReceiver
+        final PendingIntent pIntent = PendingIntent.getBroadcast(this,
+                AlarmReceiver.REQUEST_CODE,
+                new Intent(getApplicationContext(), AlarmReceiver.class),
+                PendingIntent.FLAG_UPDATE_CURRENT);
 
-        // Setup periodic alarm
-        long firstMillis = System.currentTimeMillis(); // alarm is set right away
-        AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
-
-        // First parameter is the type: ELAPSED_REALTIME, ELAPSED_REALTIME_WAKEUP, RTC_WAKEUP
-        // Interval can be INTERVAL_FIFTEEN_MINUTES, INTERVAL_HALF_HOUR, INTERVAL_HOUR, INTERVAL_DAY
-        alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstMillis, 5000L, pIntent);
+        ((AlarmManager) this.getSystemService(Context.ALARM_SERVICE))
+                .setInexactRepeating(AlarmManager.RTC_WAKEUP,
+                        System.currentTimeMillis(),
+                        REPEAT_INTERVAL,
+                        pIntent);
     }
 }
