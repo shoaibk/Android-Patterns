@@ -49,4 +49,4 @@ public class AlarmReceiver extends BroadcastReceiver {
     android:process=":remote" />
 ```
 
-``` android:process=":remote" ``` in the <receiver> tag
+``` android:process=":remote" ``` in the ``` <receiver> ``` tag
