@@ -14,6 +14,7 @@ ___
 - [BooksDB] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BooksDB) - Create a simple SQLite database containing one table
 - [BookArrayAdapter] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BookArrayAdapter) - Create a custom ArrayAdapter and use in a ListView
 - [SiteProvider] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SiteProvider) - Create a Content Provider for a database of websites.
+- [SimpleNotification] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SimpleNotification)- Creates a simple notification. When clicked, the notification takes you to another Activity.
 
 #### Todo
 - CarCursorAdapter - custom CursorAdapter for Car. A Car has Make, Model, Year, HorsePower, Description, logoUrl and ImageUrl. It shows how to load data using cursor adapter into a list. It integrates concepts from SQLiteDatabase, ContentProvider, CursorAdapter and Loader
