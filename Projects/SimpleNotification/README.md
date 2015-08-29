@@ -1,6 +1,8 @@
 ##### Simple Notification
 Show how to create a notification and set up a PendingIntent to react to the notification.
 
+![diagram](pic2.png)
+
 ###### 1. Create a PendingIntent
 A PendingIntent is a deferred action that will happen when the notification is clicked.
 

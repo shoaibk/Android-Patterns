@@ -1,6 +1,8 @@
 ##### Periodic Service
 Create a service and schedule to run it periodically. It uses AlarmManager to schedule and run a PendingIntent. The PendingIntent points to a BroadcastReceiver, which gets triggered when the alarms goes off. The BroadcastReceiver then starts an IntentService, which will do the intended work, such as check email, sync data etc.
 
+![Diagram](pic1.png)
+
 ###### 1. Create Service
 Create PeriodicIntentService class, which extends IntentService. The onHandleIntent() method will be called when this service is started.
 
