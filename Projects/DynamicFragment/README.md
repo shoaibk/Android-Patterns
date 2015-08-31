@@ -20,6 +20,13 @@ Create a Fragment subclass and in its onCreateView, inflate the xml layout creat
 ##### 3. Create Activity Layout
 The activity layout should have only a FrameLayout, which acts as the container of the fragment.
 
+```xml
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+```
+
 ##### 4. Create Activity
 Create Activity subclass and add the fragment into the activity's layout in runtime using FragmentManager.
 
