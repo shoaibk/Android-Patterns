@@ -12,6 +12,10 @@ ___
 
 #### Layouts
 
+#### Fragments
+- [FixedFragment](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/FixedFragment) Using a fixed fragment inside an activity.
+- [DynamicFragment](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/DynamicFragment) Using a dynamic fragment inside an activity.
+
 #### Adapters
 - [BookArrayAdapter] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BookArrayAdapter) - Create a custom ArrayAdapter and use in a ListView
 
