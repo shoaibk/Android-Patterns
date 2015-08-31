@@ -1,7 +1,7 @@
 #### Simple Broadcast Receiver
 Creates a Broadcast Receiver to receive ACTION_HEADSET_PLUG Intent, which is triggered when the headphone is plugged or unplugged.
 
-1. Create HeadsetReceiver
+##### 1. Create HeadsetReceiver
 Extend the abstract class BroadcastReceiver and override onReceive(). We just pull the info from the Intent's extras.
 
 ```java
@@ -16,7 +16,7 @@ Extend the abstract class BroadcastReceiver and override onReceive(). We just pu
     }
 ```
 
-2. Register/Unregister receiver in Activity
+##### 2. Register/Unregister receiver in Activity
 ```java
 @Override
     public void onResume() {
