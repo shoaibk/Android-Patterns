@@ -39,6 +39,10 @@ ___
 - RecyclerView
 - CardView
 - GridView
+- Activity lifecycle
+- Fragment lifecycle
+- Fragment backstack
+- Saving data on rotation
 - Using Picasso
 - Using RetroFit
 - Toolbar/Actionbar
