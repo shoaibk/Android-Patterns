@@ -33,6 +33,14 @@ ___
 - [PeriodicService] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/PeriodicService) - Peridically triggers a service.
 
 #### Todo
+- RecyclerView
+- CardView
+- GridView
+- Using Picasso
+- Using RetroFit
+- Toolbar/Actionbar
+- SharedPreference
+- Settings
 - CarCursorAdapter - custom CursorAdapter for Car. A Car has Make, Model, Year, HorsePower, Description, logoUrl and ImageUrl. It shows how to load data using cursor adapter into a list. It integrates concepts from SQLiteDatabase, ContentProvider, CursorAdapter and Loader
 - PedometerService - create a background service to count steps
 - StepNotification - create a notification to show how many steps the user has taken
