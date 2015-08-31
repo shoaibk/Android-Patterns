@@ -11,6 +11,11 @@ ___
 - [AppCompatTheme](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/AppCompatTheme) Using Material Design theme in your app.
 
 #### Layouts
+- [LayoutDemo](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LayoutDemo) Shows how different layouts work
+
+#### Fragments
+- [FixedFragment](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/FixedFragment) Using a fixed fragment inside an activity.
+- [DynamicFragment](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/DynamicFragment) Using a dynamic fragment inside an activity.
 
 #### Adapters
 - [BookArrayAdapter] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BookArrayAdapter) - Create a custom ArrayAdapter and use in a ListView
@@ -21,6 +26,9 @@ ___
 - [BooksDB] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BooksDB) - Create a simple SQLite database containing one table
 - [SiteProvider] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SiteProvider) - Create a Content Provider for a database of websites.
 
+#### BroadcastReceiver
+- [SimpleReceiver] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SimpleReceiver)- Creates a Broadcast receiver to detect headphone plug in/out events.
+
 #### Notification
 - [SimpleNotification] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SimpleNotification)- Creates a simple notification. When clicked, the notification takes you to another Activity.
 
@@ -28,6 +36,14 @@ ___
 - [PeriodicService] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/PeriodicService) - Peridically triggers a service.
 
 #### Todo
+- RecyclerView
+- CardView
+- GridView
+- Using Picasso
+- Using RetroFit
+- Toolbar/Actionbar
+- SharedPreference
+- Settings
 - CarCursorAdapter - custom CursorAdapter for Car. A Car has Make, Model, Year, HorsePower, Description, logoUrl and ImageUrl. It shows how to load data using cursor adapter into a list. It integrates concepts from SQLiteDatabase, ContentProvider, CursorAdapter and Loader
 - PedometerService - create a background service to count steps
 - StepNotification - create a notification to show how many steps the user has taken
