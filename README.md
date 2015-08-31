@@ -11,6 +11,7 @@ ___
 - [AppCompatTheme](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/AppCompatTheme) Using Material Design theme in your app.
 
 #### Layouts
+- [LayoutDemo](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LayoutDemo) Shows how different layouts work
 
 #### Fragments
 - [FixedFragment](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/FixedFragment) Using a fixed fragment inside an activity.
