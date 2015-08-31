@@ -26,6 +26,9 @@ ___
 - [BooksDB] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BooksDB) - Create a simple SQLite database containing one table
 - [SiteProvider] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SiteProvider) - Create a Content Provider for a database of websites.
 
+#### BroadcastReceiver
+- [SimpleReceiver] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SimpleReceiver)- Creates a Broadcast receiver to detect headphone plug in/out events.
+
 #### Notification
 - [SimpleNotification] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SimpleNotification)- Creates a simple notification. When clicked, the notification takes you to another Activity.
 
