@@ -39,7 +39,8 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
 
 ##### 3. Create Fragment
 Define a new Fragment class HelloFragment by extending Fragment. It will need it's own layout, fragment_hello.xml.
-```
+
+```java
 public class HelloFragment extends Fragment {
 
     public HelloFragment() {
