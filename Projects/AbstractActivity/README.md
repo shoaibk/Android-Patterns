@@ -1,4 +1,5 @@
 #### Abstract Activity
+![diagram](pic1.png)
 
 ##### 1. Create Activity Layout
 Create layout of the activity that will host the fragment in ```activity_fragment.xml```. It will have only a FrameLayout element, which will act as the container of the fragment.
