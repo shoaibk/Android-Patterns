@@ -6,18 +6,21 @@ It's not that there are not enough examples out there, but most of the time the 
 The aim of this work is to have a set of reference implementations that someone can follow through as a list of steps. In order to do that, we will handle each pattern at a time, independent of the others, as much as possible. I realize that sometimes it won't be just possible. For example, in order to implement a Content Provider, one needs to implement a database first. But we will try to keep dependency to a minimum.
 ___
 
-#### Views
+#### View
 - [LauncherIcon] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LauncherIcon) - Importing a launcher icon into Android Studio.
 - [AppCompatTheme](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/AppCompatTheme) Using Material Design theme in your app.
 
-#### Layouts
+#### Layout
 - [LayoutDemo](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LayoutDemo) Shows how different layouts work
 
-#### Fragments
+#### Activity
+- [AbstractActivity](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/AbstractActivity) Create an abstract Activity to encapsulate common behavior.
+
+#### Fragment
 - [FixedFragment](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/FixedFragment) Using a fixed fragment inside an activity.
 - [DynamicFragment](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/DynamicFragment) Using a dynamic fragment inside an activity.
 
-#### Adapters
+#### Adapter
 - [BookArrayAdapter] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/BookArrayAdapter) - Create a custom ArrayAdapter and use in a ListView
 
 #### Database, Content Provider, Loader
