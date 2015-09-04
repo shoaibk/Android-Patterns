@@ -28,7 +28,7 @@ public class ContactHolder extends RecyclerView.ViewHolder implements View.OnCli
 
     }
 
-    public void bindCrime(Contact contact) {
+    public void bindContact(Contact contact) {
         mContact = contact;
         mNameTextView.setText(mContact.getName());
         mEmailTextView.setText(mContact.getEmail());

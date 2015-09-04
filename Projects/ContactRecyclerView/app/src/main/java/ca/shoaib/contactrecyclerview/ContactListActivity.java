@@ -1,6 +1,5 @@
 package ca.shoaib.contactrecyclerview;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,12 +9,6 @@ public class ContactListActivity extends SingleFragmentActivity {
     @Override
     protected Fragment createFragment() {
         return new ContactListFragment();
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
     }
 
     @Override

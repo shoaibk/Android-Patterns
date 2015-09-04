@@ -24,7 +24,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactHolder> {
     @Override
     public void onBindViewHolder(ContactHolder holder, int position) {
         Contact contact = mContacts.get(position);
-        holder.bindCrime(contact);
+        holder.bindContact(contact);
     }
 
     @Override
