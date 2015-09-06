@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SnackBar</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="view_snackbar">Show Snackbar</string>
+    <string name="snackbar_text">This is a Snackbar</string>
+    <string name="snackbar_action">Action</string>
+</resources>
