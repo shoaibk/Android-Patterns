@@ -10,6 +10,9 @@ ___
 - [LauncherIcon] (https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LauncherIcon) - Importing a launcher icon into Android Studio.
 - [AppCompatTheme](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/AppCompatTheme) Using Material Design theme in your app.
 
+#### Widget
+- [SnackBar](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/SnackBar) Using a SnackBar.
+
 #### Layout
 - [LayoutDemo](https://github.com/shoaibk/Android-Patterns/tree/master/Projects/LayoutDemo) Shows how different layouts work
 
